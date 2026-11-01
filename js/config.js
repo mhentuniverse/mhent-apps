@@ -9,7 +9,7 @@ window.MHENT_APPS_CONFIG = {
     filesize: "203 MB",
     platform: "Windows 10 / 11 (64-bit)",
     // Direct GitHub Releases download link
-    downloadUrl: "https://github.com/mhentuniverse/mhent-apps/releases/latest/download/AISA%20Horizon%20Setup.exe"
+    downloadUrl: "https://github.com/mhentuniverse/mhent-apps/releases/latest/download/AISA-Horizon-Setup.exe"
   },
   orbit: {
     name: "AISA Orbit",
@@ -20,7 +20,7 @@ window.MHENT_APPS_CONFIG = {
     filesize: "203 MB",
     platform: "Windows 10 / 11 (64-bit)",
     // Direct GitHub Releases download link
-    downloadUrl: "https://github.com/mhentuniverse/mhent-apps/releases/latest/download/AISA%20Orbit%20Setup.exe"
+    downloadUrl: "https://github.com/mhentuniverse/mhent-apps/releases/latest/download/AISA-Orbit-Setup.exe"
   },
   study: {
     name: "MHEnt. Study",
