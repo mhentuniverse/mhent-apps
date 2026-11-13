@@ -1,9 +1,13 @@
 // Main JS for MHEnt Universe Apps Hub
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
   initCosmicCanvas();
   bindDownloadButtons();
+  try {
+    await fetchLiveReleaseInfo();
+  } catch (e) {
+    console.debug('Live release info fetch error:', e);
+  }
   handleAutoDownload();
-  fetchLiveReleaseInfo();
 });
 
 // Subtle ambient cosmic stars canvas
@@ -114,7 +118,7 @@ function handleAutoDownload() {
 
       setTimeout(() => {
         window.location.href = mainBtn.href;
-      }, 1000);
+      }, 800);
     }
   }
 }
@@ -129,7 +133,7 @@ async function fetchLiveReleaseInfo() {
     if (!res.ok) return;
     const data = await res.json();
 
-    const ver = data.tag_name || 'v1.0.0';
+    const ver = data.tag_name || 'v2.2.0';
     const verBadges = document.querySelectorAll('.study-version-badge');
     verBadges.forEach(badge => badge.textContent = `Phiên bản ${ver}`);
 
@@ -141,14 +145,16 @@ async function fetchLiveReleaseInfo() {
     }
 
     const assets = data.assets || [];
-    const setupExe = assets.find(a => a.name.includes('Setup') && a.name.endsWith('.exe'));
-    const portableExe = assets.find(a => (a.name.includes('Portable') || !a.name.includes('Setup')) && a.name.endsWith('.exe'));
-    const releaseApk = assets.find(a => a.name.includes('Release') && a.name.endsWith('.apk'));
+    const setupExe = assets.find(a => (a.name.toLowerCase().includes('setup') || a.name.toLowerCase().includes('installer')) && a.name.endsWith('.exe'));
+    const portableExe = assets.find(a => a.name.toLowerCase().includes('portable') && a.name.endsWith('.exe'));
+    const releaseApk = assets.find(a => a.name.toLowerCase().includes('release') && a.name.endsWith('.apk'));
 
     if (setupExe) {
       document.querySelectorAll('[data-app="study"]').forEach(btn => {
         if (btn.tagName === 'A') btn.href = setupExe.browser_download_url;
       });
+      const nameEl = document.getElementById('name-study-setup');
+      if (nameEl) nameEl.textContent = setupExe.name;
       const sizeEl = document.getElementById('size-study-setup');
       if (sizeEl) sizeEl.textContent = `${(setupExe.size / (1024 * 1024)).toFixed(1)} MB`;
       const sizeSubEl = document.getElementById('size-study-setup-sub');
