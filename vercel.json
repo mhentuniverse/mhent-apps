@@ -4,6 +4,8 @@
   "rewrites": [
     { "source": "/horizon", "destination": "/horizon.html" },
     { "source": "/orbit", "destination": "/orbit.html" },
+    { "source": "/study", "destination": "/study.html" },
+    { "source": "/mhent-study", "destination": "/study.html" },
     { "source": "/aisa-horizon", "destination": "/horizon.html" },
     { "source": "/aisa-orbit", "destination": "/orbit.html" }
   ]

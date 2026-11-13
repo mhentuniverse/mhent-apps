@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tải Về MHEnt. Study - Vũ Trụ Học Ngoại Ngữ & Âm Nhạc Song Ngữ</title>
+  <meta name="description" content="Tải về MHEnt. Study cho Windows (Setup / Portable), Android (APK) và Web App (PWA). Nền tảng học ngoại ngữ thế hệ mới thuộc Miyazaki Haruto Entertainment.">
+  <link rel="icon" type="image/png" href="assets/study_logo.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="study-live-release">
+  <canvas class="cosmic-canvas"></canvas>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-wrapper">
+      <a href="/" class="brand-link">
+        <div class="brand-badge-logo" style="background: linear-gradient(135deg, #a855f7, #ec4899); box-shadow: 0 0 15px rgba(236, 72, 153, 0.4);">MH</div>
+        <div class="brand-text">
+          <h1>MHEnt Universe</h1>
+          <span>Software Suite</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="/">Tất cả Apps</a></li>
+          <li><a href="/horizon">AISA Horizon</a></li>
+          <li><a href="/orbit">AISA Orbit</a></li>
+          <li><a href="/study" class="active">MHEnt. Study</a></li>
+        </ul>
+      </nav>
+
+      <a href="/" class="nav-cta">
+        <span>← Về Hub Ứng Dụng</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- App Hero -->
+    <section class="app-hero">
+      <img src="assets/study_logo.png" alt="MHEnt. Study Logo" class="app-hero-icon" style="box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5), 0 0 35px rgba(236, 72, 153, 0.35); border-color: rgba(236, 72, 153, 0.3);">
+      <h1>MHEnt. Study</h1>
+      <div class="app-hero-tagline" style="color: #f472b6;">Vũ Trụ Học Ngoại Ngữ Đa Tương Tác & Âm Nhạc Song Ngữ</div>
+      
+      <div class="app-hero-meta">
+        <span class="badge badge-version study-version-badge" style="background: rgba(236, 72, 153, 0.15); color: #f472b6; border-color: rgba(236, 72, 153, 0.35);">Phiên bản v2.2.0</span>
+        <span class="badge badge-platform">Windows 10 / 11 (64-bit)</span>
+        <span class="badge badge-platform">Android 8.0+</span>
+        <span class="badge badge-platform">Web App (PWA)</span>
+      </div>
+
+      <!-- Main Download Box -->
+      <div class="download-box" style="border-color: rgba(236, 72, 153, 0.35); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 40px rgba(236, 72, 153, 0.2);">
+        <a href="https://github.com/mhentuniverse/mhent-study/releases/latest/download/MHEnt.Study.Setup.exe" class="download-btn-main download-btn-study" data-app="study">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Tải MHEnt Study Cho Windows (.exe)</span>
+        </a>
+        <div class="download-subinfo">
+          <span>Tệp: MHEnt.Study.Setup.exe</span>
+          <span>•</span>
+          <span>Dung lượng: <span id="size-study-setup">~85 MB</span></span>
+          <span>•</span>
+          <span>Cập nhật: <span id="study-release-date">Tháng 11/2026</span></span>
+        </div>
+        <div style="margin-top: 18px; padding-top: 16px; border-top: 1px solid rgba(255, 255, 255, 0.08); display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+          <a href="https://study.mhentuniverse.com" target="_blank" rel="noopener" class="btn btn-secondary" style="font-size: 13.5px; padding: 10px 18px;">
+            <span>🌐 Mở Bản Web (Không Cần Cài Đặt)</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Multi-Platform Download Grid -->
+    <section class="section-header">
+      <h3>Chọn Nền Tảng Phù Hợp Với Bạn</h3>
+      <p>MHEnt. Study sẵn sàng trên máy tính để bàn, điện thoại di động và ngay trong trình duyệt của bạn</p>
+    </section>
+
+    <div class="platform-grid">
+      <!-- Windows Card -->
+      <div class="platform-card" style="border-top: 3px solid #0078d4;">
+        <div class="platform-icon" style="color: #38bdf8;">🪟</div>
+        <h3>Windows Desktop</h3>
+        <p>Bản ứng dụng máy tính nguyên bản chạy trên Electron. Giao diện không viền sang trọng, không giật lag, hỗ trợ phím tắt và Discord Rich Presence thời gian thực.</p>
+        <div class="platform-actions">
+          <a href="https://github.com/mhentuniverse/mhent-study/releases/latest/download/MHEnt.Study.Setup.exe" class="sub-download-link" data-app="study">
+            <span>📥 Bản Cài Đặt (Setup.exe)</span>
+            <span style="font-size: 12px; color: var(--text-dim);" id="size-study-setup-sub">~85 MB</span>
+          </a>
+          <a href="https://github.com/mhentuniverse/mhent-study/releases/latest/download/MHEnt.Study.Portable.exe" class="sub-download-link" data-app="study-portable">
+            <span>⚡ Bản Di Động (Portable.exe)</span>
+            <span style="font-size: 12px; color: var(--text-dim);" id="size-study-portable">Chạy ngay</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Android Card -->
+      <div class="platform-card" style="border-top: 3px solid #3ddc84;">
+        <div class="platform-icon" style="color: #3ddc84;">🤖</div>
+        <h3>Android (APK)</h3>
+        <p>Cài đặt trực tiếp gói APK lên điện thoại hoặc máy tính bảng Android. Trải nghiệm học ngoại ngữ mượt mà bằng cử chỉ vuốt chạm, hỗ trợ đầy đủ âm thanh và lưu trữ bài học offline.</p>
+        <div class="platform-actions">
+          <a href="https://github.com/mhentuniverse/mhent-study/releases/latest/download/MHEnt-Study-Release.apk" class="sub-download-link" data-app="study-android">
+            <span>📱 Tải APK Chính Thức (Release)</span>
+            <span style="font-size: 12px; color: var(--text-dim);" id="size-study-android">~38 MB</span>
+          </a>
+          <div style="font-size: 12px; color: var(--text-muted); text-align: center; margin-top: 4px;">
+            Yêu cầu Android 8.0 trở lên • Hỗ trợ kiến trúc ARM64 & x86_64
+          </div>
+        </div>
+      </div>
+
+      <!-- Web & iOS Card -->
+      <div class="platform-card" style="border-top: 3px solid #a855f7;">
+        <div class="platform-icon" style="color: #c084fc;">🌐</div>
+        <h3>Web App & iOS (PWA)</h3>
+        <p>Học tức thì không cần tải về trên mọi trình duyệt hiện đại. Trên iOS (iPhone/iPad), chỉ cần mở Safari và chọn <strong>"Thêm vào Màn hình chính"</strong> để có icon ứng dụng toàn màn hình.</p>
+        <div class="platform-actions">
+          <a href="https://study.mhentuniverse.com" target="_blank" rel="noopener" class="sub-download-link" style="background: rgba(168, 85, 247, 0.15); border-color: rgba(168, 85, 247, 0.35);">
+            <span>🚀 Mở study.mhentuniverse.com</span>
+            <span style="color: #f472b6;">Truy cập ngay →</span>
+          </a>
+          <div style="font-size: 12px; color: var(--text-muted); text-align: center; margin-top: 4px;">
+            Hỗ trợ Chrome, Edge, Safari, Firefox • Đồng bộ đám mây
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Detailed Highlights -->
+    <section class="section-header">
+      <h3>Sức Mạnh Của MHEnt. Study</h3>
+      <p>Không gian học ngoại ngữ kết hợp công nghệ vũ trụ và âm nhạc song ngữ độc quyền từ MHEnt</p>
+    </section>
+
+    <div class="specs-grid">
+      <div class="spec-card">
+        <h4 style="color: #f472b6;">🌌 Học 4 Ngôn Ngữ Đa Vũ Trụ</h4>
+        <p>Tiếng Anh, Nhật, Hàn, Trung được cấu trúc khoa học theo lộ trình chuẩn quốc tế. Tích hợp từ điển tương tác, phiên âm Furigana, Hangul và Pinyin chuẩn xác.</p>
+      </div>
+
+      <div class="spec-card">
+        <h4 style="color: #f472b6;">🎵 Karaoke Song Ngữ & Âm Nhạc</h4>
+        <p>Học ngoại ngữ qua âm nhạc với lời dịch chạy theo thời gian thực (LRC sync). Vừa nghe nhạc thư giãn vừa cải thiện khả năng phát âm và ghi nhớ từ vựng tự nhiên.</p>
+      </div>
+
+      <div class="spec-card">
+        <h4 style="color: #f472b6;">⚡ Cầu Nối Discord Rich Presence</h4>
+        <p>Tự động hiển thị bài hát đang nghe hoặc tiến độ học ngoại ngữ trực tiếp lên hồ sơ Discord cá nhân thông qua ứng dụng trung tâm MHEnt. Link.</p>
+      </div>
+
+      <div class="spec-card">
+        <h4 style="color: #f472b6;">📴 Học Ngoại Tuyến (Offline-First)</h4>
+        <p>Bộ nhớ đệm thông minh tự động lưu dữ liệu flashcard, từ vựng và bài học trong máy. Bạn vẫn có thể tiếp tục rèn luyện ngay cả khi không có kết nối internet.</p>
+      </div>
+
+      <div class="spec-card">
+        <h4 style="color: #f472b6;">🎴 Thẻ Lật 3D & Luyện Phản Xạ</h4>
+        <p>Phương pháp lặp lại ngắt quãng (Spaced Repetition) với hiệu ứng thị giác 3D sinh động, giúp ghi nhớ từ mới sâu sắc hơn gấp 3 lần phương pháp truyền thống.</p>
+      </div>
+
+      <div class="spec-card">
+        <h4 style="color: #f472b6;">🔐 Đồng Bộ MHEnt Universe ID</h4>
+        <p>Đăng nhập một chạm bảo mật cao, tự động đồng bộ danh sách bài học ưa thích và thành tích học tập xuyên suốt giữa Web, Desktop và Mobile.</p>
+      </div>
+    </div>
+
+    <!-- System Requirements -->
+    <section style="margin: 60px 0 20px;">
+      <div class="section-header">
+        <h3>Yêu Cầu Hệ Thống</h3>
+        <p>Cấu hình đề nghị để trải nghiệm MHEnt. Study tối ưu nhất</p>
+      </div>
+
+      <div class="specs-grid" style="grid-template-columns: repeat(2, 1fr);">
+        <div class="spec-card">
+          <h4 style="color: #f472b6;">Windows Desktop</h4>
+          <p>• Hệ điều hành: Windows 10 hoặc Windows 11 (64-bit)<br>
+          • Vi xử lý: 1.5 GHz hoặc nhanh hơn (x64 / AMD64)<br>
+          • RAM: Tối thiểu 2 GB RAM (Khuyến nghị 4 GB)<br>
+          • Dung lượng ổ cứng: 250 MB dung lượng trống</p>
+        </div>
+        <div class="spec-card">
+          <h4 style="color: #f472b6;">Android & Trình Duyệt</h4>
+          <p>• Android: Android 8.0 (Oreo) trở lên<br>
+          • Trình duyệt Web: Google Chrome 90+, Microsoft Edge 90+, Apple Safari 14+, Mozilla Firefox 88+<br>
+          • Hỗ trợ Web Audio API và LocalStorage / IndexedDB</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <strong>Miyazaki Haruto Entertainment Co., Ltd.</strong>
+          <p style="margin-top: 4px;">MHEnt. Study — Interactive Learning & Celestial Music Environment</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="/">Tất cả Apps</a></li>
+          <li><a href="/horizon">AISA Horizon</a></li>
+          <li><a href="/orbit">AISA Orbit</a></li>
+          <li><a href="https://study.mhentuniverse.com" target="_blank" rel="noopener">Mở Bản Web</a></li>
+          <li><a href="https://mhentuniverse.com" target="_blank" rel="noopener">Trang Chủ</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        Copyright © 2026 Miyazaki Haruto Entertainment Co., Ltd. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

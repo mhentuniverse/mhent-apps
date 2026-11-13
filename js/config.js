@@ -5,10 +5,9 @@ window.MHENT_APPS_CONFIG = {
     tagline: "The Intelligent Next-Gen Code Studio & IDE",
     version: "1.0.0",
     releaseDate: "November 2026",
-    filename: "AISA Horizon Setup.exe",
+    filename: "AISA-Horizon-Setup.exe",
     filesize: "203 MB",
     platform: "Windows 10 / 11 (64-bit)",
-    // Direct GitHub Releases download link
     downloadUrl: "https://github.com/mhentuniverse/mhent-apps/releases/latest/download/AISA-Horizon-Setup.exe"
   },
   orbit: {
@@ -16,16 +15,23 @@ window.MHENT_APPS_CONFIG = {
     tagline: "Autonomous AI Agent Workstation",
     version: "1.0.0",
     releaseDate: "November 2026",
-    filename: "AISA Orbit Setup.exe",
+    filename: "AISA-Orbit-Setup.exe",
     filesize: "203 MB",
     platform: "Windows 10 / 11 (64-bit)",
-    // Direct GitHub Releases download link
     downloadUrl: "https://github.com/mhentuniverse/mhent-apps/releases/latest/download/AISA-Orbit-Setup.exe"
   },
   study: {
     name: "MHEnt. Study",
-    tagline: "Interactive Learning & Knowledge Environment",
-    version: "Web & Desktop",
+    tagline: "Vũ Trụ Học Ngoại Ngữ Đa Tương Tác & Âm Nhạc Song Ngữ",
+    version: "2.2.0",
+    releaseDate: "November 2026",
+    filename: "MHEnt-Study-Setup.exe",
+    filesize: "85 MB",
+    platform: "Windows 10 / 11 (64-bit) & Android",
+    repo: "mhentuniverse/mhent-study",
+    downloadUrl: "https://github.com/mhentuniverse/mhent-study/releases/latest/download/MHEnt.Study.Setup.exe",
+    portableUrl: "https://github.com/mhentuniverse/mhent-study/releases/latest/download/MHEnt.Study.Portable.exe",
+    androidUrl: "https://github.com/mhentuniverse/mhent-study/releases/latest/download/MHEnt-Study-Release.apk",
     webUrl: "https://study.mhentuniverse.com"
   }
 };
