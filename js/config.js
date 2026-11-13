@@ -23,7 +23,7 @@ window.MHENT_APPS_CONFIG = {
   study: {
     name: "MHEnt. Study",
     tagline: "Vũ Trụ Học Ngoại Ngữ Đa Tương Tác & Âm Nhạc Song Ngữ",
-    version: "2.2.0",
+    version: "2.2.1",
     releaseDate: "November 2026",
     filename: "MHEnt-Study-Setup.exe",
     filesize: "85 MB",
