@@ -29,9 +29,19 @@ window.MHENT_APPS_CONFIG = {
     filesize: "85 MB",
     platform: "Windows 10 / 11 (64-bit) & Android",
     repo: "mhentuniverse/mhent-study",
-    downloadUrl: "https://github.com/mhentuniverse/mhent-study/releases/latest/download/MHEnt.Study.Setup.exe",
-    portableUrl: "https://github.com/mhentuniverse/mhent-study/releases/latest/download/MHEnt.Study.Portable.exe",
-    androidUrl: "https://github.com/mhentuniverse/mhent-study/releases/latest/download/MHEnt-Study-Release.apk",
+    downloadUrl: "https://github.com/mhentuniverse/mhent-study/releases/latest/download/MHEnt-Study-Setup-1.0.0.exe",
+    portableUrl: "https://github.com/mhentuniverse/mhent-study/releases/latest/download/MHEnt-Study-1.0.0-Portable.exe",
+    androidUrl: "https://github.com/mhentuniverse/mhent-study/releases/latest/download/MHEnt-Study-Android-Release-v1.0.0.apk",
     webUrl: "https://study.mhentuniverse.com"
+  },
+  link: {
+    name: "MHEnt. Link",
+    tagline: "Trung Tâm Đồng Bộ Danh Tính, Hệ Sinh Thái & Cầu Nối Discord",
+    version: "1.0.0",
+    releaseDate: "November 2026",
+    filename: "MHEnt-Link-Setup.exe",
+    filesize: "65 MB",
+    platform: "Windows 10 / 11 (64-bit)",
+    downloadUrl: "https://github.com/mhentuniverse/mhent-link/releases/latest/download/MHEnt.Link.Setup.exe"
   }
 };

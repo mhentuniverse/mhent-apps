@@ -90,6 +90,14 @@ function bindDownloadButtons() {
       btn.href = cfg.study.androidUrl;
     }
   });
+
+  // Link Buttons
+  const linkBtns = document.querySelectorAll('[data-app="link"]');
+  linkBtns.forEach(btn => {
+    if (btn.tagName === 'A' && cfg.link?.downloadUrl) {
+      btn.href = cfg.link.downloadUrl;
+    }
+  });
 }
 
 // Handle auto-download query (?download=true or ?direct=1)
@@ -106,7 +114,7 @@ function handleAutoDownload() {
 
       setTimeout(() => {
         window.location.href = mainBtn.href;
-      }, 1200);
+      }, 1000);
     }
   }
 }
@@ -121,7 +129,7 @@ async function fetchLiveReleaseInfo() {
     if (!res.ok) return;
     const data = await res.json();
 
-    const ver = data.tag_name || 'v2.2.0';
+    const ver = data.tag_name || 'v1.0.0';
     const verBadges = document.querySelectorAll('.study-version-badge');
     verBadges.forEach(badge => badge.textContent = `Phiên bản ${ver}`);
 
@@ -143,6 +151,8 @@ async function fetchLiveReleaseInfo() {
       });
       const sizeEl = document.getElementById('size-study-setup');
       if (sizeEl) sizeEl.textContent = `${(setupExe.size / (1024 * 1024)).toFixed(1)} MB`;
+      const sizeSubEl = document.getElementById('size-study-setup-sub');
+      if (sizeSubEl) sizeSubEl.textContent = `${(setupExe.size / (1024 * 1024)).toFixed(1)} MB`;
     }
 
     if (portableExe) {
