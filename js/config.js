@@ -42,6 +42,6 @@ window.MHENT_APPS_CONFIG = {
     filename: "MHEnt.Link.Setup.exe",
     filesize: "77 MB",
     platform: "Windows 10 / 11 (64-bit)",
-    downloadUrl: "https://github.com/mhentuniverse/mhent-apps/releases/latest/download/MHEnt.Link.Setup.exe"
+    downloadUrl: "https://github.com/mhentuniverse/mhent-study/releases/latest/download/MHEnt.Link.Setup.exe"
   }
 };
