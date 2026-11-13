@@ -29,9 +29,9 @@ window.MHENT_APPS_CONFIG = {
     filesize: "85 MB",
     platform: "Windows 10 / 11 (64-bit) & Android",
     repo: "mhentuniverse/mhent-study",
-    downloadUrl: "https://github.com/mhentuniverse/mhent-study/releases/latest/download/MHEnt-Study-Setup-1.0.0.exe",
-    portableUrl: "https://github.com/mhentuniverse/mhent-study/releases/latest/download/MHEnt-Study-1.0.0-Portable.exe",
-    androidUrl: "https://github.com/mhentuniverse/mhent-study/releases/latest/download/MHEnt-Study-Android-Release-v1.0.0.apk",
+    downloadUrl: "https://github.com/mhentuniverse/mhent-study/releases/latest/download/MHEnt-Study-Setup-2.2.0.exe",
+    portableUrl: "https://github.com/mhentuniverse/mhent-study/releases/latest/download/MHEnt-Study-2.2.0-Portable.exe",
+    androidUrl: "https://github.com/mhentuniverse/mhent-study/releases/latest/download/MHEnt-Study-Android-Release-v2.2.0.apk",
     webUrl: "https://study.mhentuniverse.com"
   },
   link: {
