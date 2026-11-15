@@ -26,7 +26,7 @@ window.MHENT_APPS_CONFIG = {
     version: "2.2.1",
     releaseDate: "November 2026",
     filename: "MHEnt-Study-Setup.exe",
-    filesize: "319 MB",
+    filesize: "96 MB",
     platform: "Windows 10 / 11 (64-bit) & Android",
     repo: "mhentuniverse/mhent-study",
     downloadUrl: "https://github.com/mhentuniverse/mhent-study/releases/latest/download/MHEnt-Study-Setup.exe",
